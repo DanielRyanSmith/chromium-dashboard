@@ -66,6 +66,8 @@ There are some developing information in developer-documentation.md.
 
 - If you need to test or debug anything to do with dependencies, you can get a clean start by running `npm run clean-setup`.
 
+- Occasionally, the Google Cloud CLI will requires an update, which will cause the development environment setup to fail with an unrelated error message `Failed to connect to localhost port 15606 after 0 ms: Connection refused`. Running the `gcloud components update` command will update as needed and resolve this issue.
+
 #### Blink components
 
 Chromestatus currently gets the list of Blink components from the file `hack_components.py`.
